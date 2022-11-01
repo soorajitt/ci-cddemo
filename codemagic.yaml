@@ -2,6 +2,10 @@ workflows:
   hello-world:
     name: Hello world workflow
     scripts:
-      - name: Generate debug build
+      - name: Build Android Test release
         script: |
-            ./gradlew assembleDebug
+            ./gradlew assembleAndroidTest
+      - name: Upload files to Perfecto and run tests
+        script: |
+                cd PerfectoRunAndroid
+                ./gradlew perfecto-android-inst
