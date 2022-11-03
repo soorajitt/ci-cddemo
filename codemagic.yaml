@@ -1,6 +1,6 @@
 workflows:
   hello-world:
-    name: Hello world workflow
+    name: Native Android
     scripts:
         - name: unit test
           script: ./gradlew test
