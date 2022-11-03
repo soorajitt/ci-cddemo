@@ -2,5 +2,5 @@ workflows:
   hello-world:
     name: Hello world workflow
     scripts:
-        - name: Test
+        - name: unit test
           script: ./gradlew test
