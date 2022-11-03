@@ -2,11 +2,6 @@ workflows:
   hello-world:
     name: Native Android
     scripts:
-        - name: Launch emulator
-          script: |
-                cd $ANDROID_HOME/tools
-                emulator -avd emulator &
-                adb wait-for-device
         - name: Test
           script: |
                 set -e
