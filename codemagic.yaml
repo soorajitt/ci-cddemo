@@ -4,4 +4,3 @@ workflows:
     scripts:
         - name: Test
           script: ./gradlew test
-          test_report: app/build/test-results/**/*.xml
